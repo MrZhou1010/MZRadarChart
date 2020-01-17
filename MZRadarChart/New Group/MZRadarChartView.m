@@ -11,6 +11,7 @@
 
 @interface MZRadarChartView ()
 
+/// 配置
 @property (nonatomic, strong) MZRadarChartConfiguration *configuration;
 /// 中心点
 @property (nonatomic, assign) CGPoint centerPoint;
@@ -161,7 +162,7 @@
 }
 
 - (CGSize)sizeWithDescription:(NSString *)desc maxSize:(CGSize)maxSize {
-    CGRect rect = [desc boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName: self.configuration.descTextFont} context:nil];
+    CGRect rect = [desc boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:self.configuration.descTextFont} context:nil];
     return rect.size;
 }
 
