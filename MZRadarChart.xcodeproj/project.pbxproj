@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43B5E43246FB97C0059E663 /* MZRadarChartConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E3F246FB97C0059E663 /* MZRadarChartConfiguration.m */; };
+		B43B5E44246FB97C0059E663 /* MZRadarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B43B5E42246FB97C0059E663 /* MZRadarChartView.m */; };
 		B4558F6E23C86F3400289FB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F6D23C86F3400289FB0 /* AppDelegate.m */; };
 		B4558F7123C86F3400289FB0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F7023C86F3400289FB0 /* SceneDelegate.m */; };
 		B4558F7423C86F3400289FB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F7323C86F3400289FB0 /* ViewController.m */; };
@@ -16,8 +18,6 @@
 		B4558F7F23C86F4600289FB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F7E23C86F4600289FB0 /* main.m */; };
 		B4558F8923C86F4700289FB0 /* MZRadarChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F8823C86F4700289FB0 /* MZRadarChartTests.m */; };
 		B4558F9423C86F4700289FB0 /* MZRadarChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558F9323C86F4700289FB0 /* MZRadarChartUITests.m */; };
-		B4558FA423C86F7100289FB0 /* MZRadarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558FA323C86F7100289FB0 /* MZRadarChartView.m */; };
-		B4558FA723C86FB000289FB0 /* MZRadarChartConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B4558FA623C86FB000289FB0 /* MZRadarChartConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B43B5E3F246FB97C0059E663 /* MZRadarChartConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRadarChartConfiguration.m; sourceTree = "<group>"; };
+		B43B5E40246FB97C0059E663 /* MZRadarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRadarChartView.h; sourceTree = "<group>"; };
+		B43B5E41246FB97C0059E663 /* MZRadarChartConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRadarChartConfiguration.h; sourceTree = "<group>"; };
+		B43B5E42246FB97C0059E663 /* MZRadarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRadarChartView.m; sourceTree = "<group>"; };
 		B4558F6923C86F3300289FB0 /* MZRadarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZRadarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4558F6C23C86F3400289FB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4558F6D23C86F3400289FB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,10 +60,6 @@
 		B4558F8F23C86F4700289FB0 /* MZRadarChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZRadarChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4558F9323C86F4700289FB0 /* MZRadarChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZRadarChartUITests.m; sourceTree = "<group>"; };
 		B4558F9523C86F4700289FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4558FA223C86F7100289FB0 /* MZRadarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZRadarChartView.h; sourceTree = "<group>"; };
-		B4558FA323C86F7100289FB0 /* MZRadarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZRadarChartView.m; sourceTree = "<group>"; };
-		B4558FA523C86FB000289FB0 /* MZRadarChartConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZRadarChartConfiguration.h; sourceTree = "<group>"; };
-		B4558FA623C86FB000289FB0 /* MZRadarChartConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZRadarChartConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43B5E3E246FB97C0059E663 /* MZRadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				B43B5E41246FB97C0059E663 /* MZRadarChartConfiguration.h */,
+				B43B5E3F246FB97C0059E663 /* MZRadarChartConfiguration.m */,
+				B43B5E40246FB97C0059E663 /* MZRadarChartView.h */,
+				B43B5E42246FB97C0059E663 /* MZRadarChartView.m */,
+			);
+			path = MZRadarChart;
+			sourceTree = "<group>";
+		};
 		B4558F6023C86F3300289FB0 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +121,7 @@
 		B4558F6B23C86F3300289FB0 /* MZRadarChart */ = {
 			isa = PBXGroup;
 			children = (
-				B4558FA123C86F5700289FB0 /* MZRadarChart */,
+				B43B5E3E246FB97C0059E663 /* MZRadarChart */,
 				B4558F6C23C86F3400289FB0 /* AppDelegate.h */,
 				B4558F6D23C86F3400289FB0 /* AppDelegate.m */,
 				B4558F6F23C86F3400289FB0 /* SceneDelegate.h */,
@@ -142,18 +153,6 @@
 				B4558F9523C86F4700289FB0 /* Info.plist */,
 			);
 			path = MZRadarChartUITests;
-			sourceTree = "<group>";
-		};
-		B4558FA123C86F5700289FB0 /* MZRadarChart */ = {
-			isa = PBXGroup;
-			children = (
-				B4558FA523C86FB000289FB0 /* MZRadarChartConfiguration.h */,
-				B4558FA623C86FB000289FB0 /* MZRadarChartConfiguration.m */,
-				B4558FA223C86F7100289FB0 /* MZRadarChartView.h */,
-				B4558FA323C86F7100289FB0 /* MZRadarChartView.m */,
-			);
-			name = MZRadarChart;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4558F7423C86F3400289FB0 /* ViewController.m in Sources */,
-				B4558FA423C86F7100289FB0 /* MZRadarChartView.m in Sources */,
+				B43B5E43246FB97C0059E663 /* MZRadarChartConfiguration.m in Sources */,
 				B4558F6E23C86F3400289FB0 /* AppDelegate.m in Sources */,
-				B4558FA723C86FB000289FB0 /* MZRadarChartConfiguration.m in Sources */,
+				B43B5E44246FB97C0059E663 /* MZRadarChartView.m in Sources */,
 				B4558F7F23C86F4600289FB0 /* main.m in Sources */,
 				B4558F7123C86F3400289FB0 /* SceneDelegate.m in Sources */,
 			);
