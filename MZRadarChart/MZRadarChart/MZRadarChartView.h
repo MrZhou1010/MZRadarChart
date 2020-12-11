@@ -14,38 +14,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MZRadarChartView : UIView
 
-/**
- * 初始化
- *
- * @pram frame 布局
- * @pram configuration 配置
- *
- */
+/// 初始化
+/// @param frame 布局
+/// @param configuration 配置
 - (instancetype)initWithFrame:(CGRect)frame configuration:(MZRadarChartConfiguration *)configuration;
 
-/**
- * 添加配置
- *
- * @pram configuration 配置
- *
- */
+/// 添加配置
+/// @param configuration 配置
 - (void)showWithConfiguration:(MZRadarChartConfiguration *)configuration;
 
-/**
- * 添加描述
- *
- * @pram descArr 描述文字
- *
- */
+/// 添加描述
+/// @param descArr 描述文字
 - (void)showDescriptions:(NSArray *)descArr;
 
-/**
- * 绘制数据
- *
- * @pram dataArr 数据
- * @pram fillColor 填充颜色
- *
- */
+/// 绘制数据
+/// @param dataArr 数据
+/// @param fillColor 填充颜色
 - (void)showValues:(NSArray *)dataArr fillColor:(UIColor *)fillColor;
 
 @end

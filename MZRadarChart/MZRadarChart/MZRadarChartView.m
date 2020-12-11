@@ -57,7 +57,7 @@
         return;
     }
     self.centerPoint = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
-    self.angle = M_PI * 2 / self.configuration.chartPointCount;
+    self.angle = M_PI * 2.0 / self.configuration.chartPointCount;
     [self drawGridLine];
     [self drawAxisLine];
 }
@@ -82,7 +82,7 @@
         shapeLayer.path = path.CGPath;
         shapeLayer.fillColor = self.configuration.chartLayerFillColor.CGColor;
         shapeLayer.strokeColor = self.configuration.chartLayerBoarderColor.CGColor;
-        shapeLayer.lineWidth = 1 / UIScreen.mainScreen.scale;
+        shapeLayer.lineWidth = 1.0 / UIScreen.mainScreen.scale;
         [self.layer addSublayer:shapeLayer];
     }
 }
@@ -100,7 +100,7 @@
     [path closePath];
     shapeLayer.path = path.CGPath;
     shapeLayer.strokeColor = self.configuration.chartAxisColor.CGColor;
-    shapeLayer.lineWidth = 1 / UIScreen.mainScreen.scale;
+    shapeLayer.lineWidth = 1.0 / UIScreen.mainScreen.scale;
     [self.layer addSublayer:shapeLayer];
 }
 
@@ -126,7 +126,7 @@
     shapeLayer.path = path.CGPath;
     shapeLayer.fillColor = fillColor.CGColor;
     shapeLayer.strokeColor = self.configuration.chartLayerBoarderColor.CGColor;
-    shapeLayer.lineWidth = 1 / UIScreen.mainScreen.scale;
+    shapeLayer.lineWidth = 1.0 / UIScreen.mainScreen.scale;
     [self.layer addSublayer:shapeLayer];
 }
 
@@ -136,9 +136,9 @@
     }
     NSInteger index = 0;
     for (NSString *desc in descArr) {
-        CGSize descSize = [self sizeWithDescription:desc maxSize:CGSizeMake(100, 20)];
-        CGFloat x = (self.configuration.chartMaxRadius + descSize.width * 0.5 + 4) * sinf(self.angle * index);
-        CGFloat y = (self.configuration.chartMaxRadius + descSize.height * 0.5 + 4) * cosf(self.angle * index);
+        CGSize descSize = [self sizeWithDescription:desc maxSize:CGSizeMake(100.0, 20.0)];
+        CGFloat x = (self.configuration.chartMaxRadius + descSize.width * 0.5 + 4.0) * sinf(self.angle * index);
+        CGFloat y = (self.configuration.chartMaxRadius + descSize.height * 0.5 + 4.0) * cosf(self.angle * index);
         UILabel *descLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, descSize.width, descSize.height)];
         descLabel.center = CGPointMake(self.centerPoint.x + x, self.centerPoint.y - y);
         descLabel.text = desc;
