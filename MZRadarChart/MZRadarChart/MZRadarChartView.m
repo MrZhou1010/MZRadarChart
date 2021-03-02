@@ -104,6 +104,7 @@
     [self.layer addSublayer:shapeLayer];
 }
 
+#pragma mark - 方法
 - (void)showValues:(NSArray *)dataArr fillColor:(UIColor *)fillColor {
     if (dataArr.count != self.configuration.chartPointCount) {
         return;

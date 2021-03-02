@@ -27,8 +27,12 @@
 }
 
 + (instancetype)defaultConfiguration {
-    MZRadarChartConfiguration *configuration = [[MZRadarChartConfiguration alloc] init];
-    return configuration;
+    static MZRadarChartConfiguration *_instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [[self alloc] init];
+    });
+    return _instance;
 }
 
 @end

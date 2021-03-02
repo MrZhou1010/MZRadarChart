@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, MZRadarChartLabelStyle) {
     MZRadarChartLabelStyleHorizontal = 0,   // 水平
     MZRadarChartLabelStyleCircle,           // 圆环
-    MZRadarChartLabelStyleHidden,           // 隐藏
+    MZRadarChartLabelStyleHidden            // 隐藏
 };
 
 @interface MZRadarChartConfiguration : NSObject
